@@ -1,0 +1,57 @@
+# CooldownDisplay config
+#
+# - "display-name" must match the item's exact display name in-game
+#   (color codes on the item itself are ignored when matching).
+# - "cooldown-seconds" is how long the cooldown lasts after you use the item.
+# - "color" is a hex color (#RRGGBB) used for the text/bar title.
+# - "bar-color" is the closest vanilla boss-bar color (limited palette:
+#   BLUE, GREEN, PINK, PURPLE, RED, WHITE, YELLOW). Text color above is
+#   still exact, this just tints the bar itself.
+#
+# require-in-hand: false  -> cooldown shows if the item is ANYWHERE in your
+#                             inventory ("on you").
+# require-in-hand: true   -> cooldown only shows while it's in your hand.
+#
+# trigger: right_click     -> cooldown starts when you right-click with the item.
+
+settings:
+  check-interval-ticks: 4
+  require-in-hand: false
+  trigger: right_click
+
+weapons:
+  dash_sword:
+    display-name: "Dash Sword"
+    cooldown-seconds: 8
+    color: "#32CD32"     # lime green
+    bar-color: GREEN
+
+  lighting_sword:
+    display-name: "Lighting Sword"
+    cooldown-seconds: 10
+    color: "#FFFF55"     # yellow
+    bar-color: YELLOW
+
+  dash_mace:
+    display-name: "Dash Mace"
+    cooldown-seconds: 12
+    color: "#3355FF"     # blue / dark blue
+    bar-color: BLUE
+
+  saturation_spear:
+    display-name: "Saturation Spear"
+    cooldown-seconds: 15
+    color: "#FF80C0"     # pink
+    bar-color: PINK
+
+  dash_spear:
+    display-name: "Dash Spear"
+    cooldown-seconds: 8
+    color: "#FFA500"     # orange
+    bar-color: YELLOW
+
+  dashbow:
+    display-name: "Dashbow"
+    cooldown-seconds: 10
+    color: "#FF5555"     # red
+    bar-color: RED

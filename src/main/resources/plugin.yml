@@ -1,0 +1,17 @@
+name: CooldownDisplay
+version: '1.0.0'
+main: com.custom.cooldowndisplay.CooldownDisplay
+api-version: '1.20'
+author: You
+description: Shows a colored boss-bar cooldown for custom weapons, only while you're carrying them.
+
+commands:
+  cooldowndisplay:
+    aliases: [cd, cddisplay]
+    description: Reload the CooldownDisplay config.
+    permission: cooldowndisplay.admin
+    usage: /cd reload
+
+permissions:
+  cooldowndisplay.admin:
+    default: op
